@@ -5,9 +5,9 @@ import { useCartStore } from "../stores/cartStore";
 const CartDrawer = () => {
   const { isOpen, close } = useCartDrawerStore();
   const items = useCartStore((state) => state.items);
-  const removeItem = useCartStore((state) => state.removeFromCart); // Make sure this exists in your store
-  const clearCart = useCartStore((state) => state.clearCart); // Make sure this exists in your store
-  const totalPrice = useCartStore((state) => state.getTotalPrice); // Make sure this exists in your store
+  const removeItem = useCartStore((state) => state.removeFromCart);
+  const clearCart = useCartStore((state) => state.clearCart);
+  const totalPrice = useCartStore((state) => state.getTotalPrice);
 
   return (
     <aside
